@@ -1,0 +1,129 @@
+body {
+  padding: 20px;
+}
+.box {
+  border: 2px solid #000000;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.top {
+  border-bottom: 2px solid #000000;
+  padding: 10px;
+}
+.bottom {
+  padding: 20px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.left {
+  width: 30%;
+  padding: 30px;
+  background: pink;
+  border: 1px solid #000000;
+}
+.right {
+  width: calc(70% - 20px);
+  padding: 30px;
+  background: blue;
+  border: 2px solid #000000;
+}
+.product-item img {
+  width: 100%
+}
+.gold {
+  background: gold;
+  padding: 30px;
+  border: 2px solid #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-item {
+  width: calc((100% - 40px) / 3);
+  margin-bottom: 20px;
+}
+.product-item a {
+  display: block;
+  position: relative;
+}
+.product-item a .product-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #FFFFFF;
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+  padding: 10px;
+}
+
+.title {
+  position: relative;
+  padding-left: 20px;
+}
+.title:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: #c9f10e;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+
+.button a {
+  position: relative;
+}
+.button a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  background: #F8F8F8;
+}
+.button a:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
