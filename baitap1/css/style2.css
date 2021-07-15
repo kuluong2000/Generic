@@ -1,0 +1,71 @@
+.container{
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid #333;
+}
+.header p{
+    max-width: 100%;
+    height: 20px;
+    border: 1px solid #333;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    
+}
+.slider{
+    height: 50px;
+    max-width: 100%;
+    background-color:violet ;
+    margin: 10px 10px 0 10px;
+    border: 1px solid #333;
+}
+.content{
+    margin: 0;
+    padding: 0;
+}
+.list{
+    margin: 10px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.list-item{
+    
+   
+    border: 1px solid #333;
+    width: calc(33.33% - 30px);
+    height: 150px;
+}
+.list:nth-child(1) > .list-item:nth-child(3){
+    margin-right: 0;
+}
+
+.list:nth-child(1) > .list-item{
+    background: url(https://images.unsplash.com/photo-1514893135801-0cc7e1888bdc?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60) no-repeat center/cover;
+    border: 0;
+    
+}
+.list:nth-child(2) > .list-item:nth-child(1){
+    background-color: orange;
+}
+.list:nth-child(2) > .list-item:nth-child(2){
+    background-color: red;
+}
+.list:nth-child(2) > .list-item:nth-child(3){
+    background-color: blue;
+}
+@media screen and (max-width:768px) {
+    p{
+        text-align: center;
+    }
+    .list{
+        display: block;
+    }
+    .list-item{
+        width: 100%;
+    }
+    
+}
