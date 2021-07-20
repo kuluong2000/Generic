@@ -5,6 +5,19 @@
     .header{
         padding-top: 10px;
         position: relative;
+
+    }
+    .header-top{
+        padding-bottom: inherit;
+        position: fixed;
+        background-color: #ffff;
+        left: 0;
+        right: 0;
+        top: 0;
+  
+    }
+    .header-banner{
+        margin-top: 40px;
     }
     .header-logo{
         padding-left: 10px;
@@ -38,21 +51,22 @@
         padding-top: 20px;
     }
     .caption{
-        text-align: center;
+        padding: 0 1%;
     }
     .title {
-        font-size: 25px;
-        text-align: center;
-        margin-bottom: 15px;
-        margin-top: 15px;
+        font-size: 20px;
+        padding: 0 1%;
+        margin: 10px 0;
        
     }
     .desc {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         padding: 0 1%;
+        font-size: 12px;
+        width: 100%;
     }
     .about {
-        padding-top: 55px;
+        padding-top: 20px;
     }
     .list{
         display: grid;
@@ -74,30 +88,41 @@
         margin-bottom: 0;
         text-align: center;
     }
-    .send {
-        height: 160px;
+    .button{
+        padding: 15px 25px;
     }
+    
     .send-content {
         text-align: center;
-        padding: 25px 0;
+        padding: 15px 0;
     }
     .send-title {
         font-size: 25px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .send-mail {
         margin: 0 30px;
     }
     .footer{
         margin-top: 40px;
-        height: 60px;
+       
         padding: 0 1%;
     }
-    .footer-content {
-        padding: 15px 0;
-
-    }
     
-
+    .load-more{
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width:400px) {
+    .footer-content{
+        display: block;
+    }
+    .footer-info{
+       justify-content: center;
+    }
+    .footer-social{
+        padding-top: 10px;
+        justify-content: center;
+    }
     
 }
