@@ -62,14 +62,26 @@ body{
 .header-contact-item:not(:first-child){
     margin-left: 76px;
 }
+.header-contact-info > p,
+.header-contact-info > span{
+    font-family: 'Montserrat', sans-serif;
+}
+.header-contact-info > p{
+    color: #1A3761 ;
+}
+.header-contact-info > span{
+    color: #EE1F23;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
 .header-menu{
     position: relative;
     z-index: 5;
-    margin-left: 21%;
-    top: 10px;
-
+    margin-left: 23%;
+    top: 25px;
 }
-.header-menu-list{}
+/* .header-menu-list{} */
 .header-menu-item{
     margin-right: 8.2%;
 }
@@ -102,13 +114,23 @@ body{
 }
 .banner{
     width: 100%;
+    position: relative;
+}
+.banner::after{
+    content: '';
+    top: 33px;
+    z-index: 5;
+    width: 100%;
+    height: 0.1px;
+    background-color: #E0E0E0;
+    position: absolute;
 }
 .banner-img{
     position: relative;
     z-index: 1;
     padding:0;
-    
-    margin-top: -4%;
+    width: 100vw;
+    margin-top: -50px;
    
 }
 .banner-img::after{
@@ -116,7 +138,8 @@ body{
     position: absolute;
     left: 0;
     top: 0;
-    width: 27.5%;
+    
+    width:27.5%;
     height: 50px;
     background-color: #F8F8F8 ;
 }
@@ -132,7 +155,79 @@ body{
     border-left: 50px solid #F8F8F8;
     z-index: 2;
 }
+.banner-box{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 4;
+}
+.banner-social{
+    flex-direction: column;
+    position: absolute;
+    top: 70%;
+    left: 82.5%;
+    text-align: center;
+    transform: translateY(-50%);
+    z-index: 4;
+}
+.banner-social > a:nth-of-type(2){
+    margin: 30px 0;
+}
+.banner-box{
+    max-width: 65%;
+}
+.banner-social{
+    max-width: 35%;
+}
+.banner-title > span{
+    display: block;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #FFFF;
 
+}
+.banner-description{
+    font-size: 16px;
+    max-width: 75%;
+    font-weight: 400;
+    margin-top: 24px;
+    line-height: 1.5;
+    color: #FFFF;
+    margin-bottom: 55px;
+}
+.banner-link{
+    position: relative;
+    padding: 14px 51px;
+    background-color: #EE1F23;
+    color: #FFFF;
+    line-height: 1;
+}
+.banner-link:hover{
+    color: #FFFF;
+}
+.banner-link .arrow{
+    position: absolute;
+    top: 0;
+    color: black;
+    left: 100%;
+    
+    background-color: #F8F8F8;
+    width: 48px;
+    text-align:center ;
+    height: 48px;
+    padding: 14px;
+}
+/* .banner-box{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+}
+.banner-social{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+} */
 
 /* .container{
     
