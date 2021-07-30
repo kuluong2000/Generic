@@ -42,6 +42,9 @@
     .about {
         padding-top: 20px;
     }
+    .about-image{
+        margin-right: 70px;
+    }
     .title p {
         padding-bottom: 20px;
     }
@@ -62,6 +65,10 @@
     .about-caption-icon {
         top: 370px;
         left: 203px;
+    }
+    .service-item {
+
+        padding: 40px 68px 46px 40px;
     }
 
 
@@ -113,6 +120,9 @@
         padding-bottom: 0;
         margin-bottom: 5px;
     }
+    .about-image{
+        margin-right: 50px;
+    }
     .about-desc {
 
         font-size: 15px;
@@ -132,6 +142,15 @@
         width: 80px;
         left: 148px;
         top: 306px;
+    }
+    .service-item {
+
+        padding: 40px 70px 40px 30px;
+    }
+    .service-number {
+
+        right: 30px;
+
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -230,15 +249,53 @@
         padding-bottom: 0px;
         margin-bottom: 5px;
     }
+    .service {
+        padding: 30px 0;
+        margin-top: 40px;
+
+    }
+    .service-item {
+        width: 100%;
+        padding: 20px 169px 35px 52px;
+        border-bottom: 1px solid #265BC5;
+
+    }
+    .news {
+        padding-top: 30px; 
+    }
+    .new-info {
+        padding: 20px 5px 25px;
+    }
+    .new-more {
+        padding: 10px 0;
+    }
+    .new-info h2 {
+        font-size: 18px;
+    }
+    .new-month{
+        font-size: 13px;
+    }
+    .more{
+        font-size: 13px;
+    }
+  
 }
 
 @media (min-width:577px) and (max-width:767px){
+    .container{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .row{
+        margin: 0;
+    }
     .header-img {
         text-align: center;
     }
 
     .header::before {
-        top: 205px;
+        top: 222px;
 
     }
     .header-menu-link {
@@ -246,7 +303,7 @@
     }
     .header-contact-info > p,
     .header-contact-info > span {
-        font-size: 12px;
+        font-size: 11px;
     }
     .header-contact-item:not(:first-child) {
         margin-left: 25px;
@@ -255,7 +312,7 @@
         margin-top: 0;
     }
     .header-menu-item {
-        margin-right: 35px;
+        margin-right: 30px;
     }
     .banner{
         top: -18px;
@@ -295,20 +352,21 @@
         z-index: 33;
        
     }
+    
     .banner-angle img {
         left: calc(50% + 4px);
 
     }
     .about-caption-title {
-        left: 250px;
+        left: 396px;
         bottom: -15px;
-        padding: 25px 18px 35px 55px;
-        font-size: 16px;
+        padding: 30px 18px 40px 55px;
+        font-size: 20px;
     }
     .about-caption-icon {
-        width: 65px;
-        left: 228px;
-        top: 360px;
+        width: 75px;
+        left: 370px;
+        top: 520px;
     }
     .about-box {
         padding-top: 50px;
@@ -325,6 +383,25 @@
         padding-bottom: 0px;
         margin-bottom: 5px;
     }
-    
+    .image-person img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .service {
+        padding: 20px 0;
+        margin-top: 40px;
+
+    }
+    .service-item {
+        width: 100%;
+        padding: 20px 169px 25px 10px;
+    }
+    .news-item {
+        margin-right: 0;
+
+    }
+    .new-info p{
+        line-height: 1.5;
+    }
 }
 
