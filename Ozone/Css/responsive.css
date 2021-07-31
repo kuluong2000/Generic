@@ -1,7 +1,14 @@
-
+@media (min-width: 768px){
+    .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.3333%;
+    padding: 0;
+}
+}
 @media (min-width: 1200px) and (max-width:1400px) {
     .container {
        max-width: 1170px;
+       padding: 0;
     }
     .banner::after {
         width: 23.5vw;
@@ -36,8 +43,8 @@
         z-index: 4;
     }
     .banner-angle img {
-        left: calc(50% - 10.5px);
-        bottom: 3px;
+        
+    bottom: 3px;
     }
     .about {
         padding-top: 20px;
@@ -108,7 +115,7 @@
 
     }
     .banner-angle img {
-        left: calc(50% - 6px);
+        left: 49vw;
         bottom: 2px;
     }
 
@@ -151,6 +158,18 @@
 
         right: 30px;
 
+    }
+    .news {
+        padding: 95px 0;
+    }
+    
+    .feedback-box {
+        padding: 70px 0;
+    }
+    .feedback-about {
+        max-width: 84%;
+        margin-left: 83px;
+        padding-top: 25px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -261,7 +280,8 @@
 
     }
     .news {
-        padding-top: 30px; 
+        padding-top: 30px;
+        padding-bottom: 50px; 
     }
     .new-info {
         padding: 20px 5px 25px;
@@ -278,10 +298,24 @@
     .more{
         font-size: 13px;
     }
-  
+    .feedback-about {
+        margin-left: 30px;
+        padding-top: 20px;
+    }
+    .feedback-icon {
+        left: -60px;
+        top: 9px;
+    }
+    .feedback-content {
+
+        padding-top: 20px;
+    }
+    .feedback-box {
+        padding: 40px 0 60px 0;
+    }
 }
 
-@media (min-width:577px) and (max-width:767px){
+/* @media (min-width:577px) and (max-width:767px){
     .container{
         max-width: 100%;
         margin: 0;
@@ -392,6 +426,9 @@
         margin-top: 40px;
 
     }
+    .service-list {
+        flex-direction: column;
+    }
     .service-item {
         width: 100%;
         padding: 20px 169px 25px 10px;
@@ -403,5 +440,5 @@
     .new-info p{
         line-height: 1.5;
     }
-}
+} */
 
