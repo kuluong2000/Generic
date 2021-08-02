@@ -160,6 +160,16 @@
         margin-left: 83px;
         padding-top: 25px;
     }
+    .footer-menu {
+        margin-left: 0;
+    }
+    .footer-form {
+        margin-left: 0;
+    }
+    .form-action {
+        right: 13px;
+        transform: translateX(-56%);
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     
@@ -266,6 +276,7 @@
         padding-top: 30px;
         padding-bottom: 50px; 
     }
+    
     .new-info {
         padding: 20px 5px 25px;
     }
@@ -295,6 +306,63 @@
     }
     .feedback-box {
         padding: 40px 0 60px 0;
+    }
+    .map{
+        min-height: 125px;
+    }
+    .map-list {
+        height: 125px;
+    }
+    .map::before {
+        height: 125px;
+
+
+    }
+    .map-item img {
+        width: 20px;
+    }
+    .map-item {
+        width: calc(100% / 5);
+    }
+    .map-contact {
+        font-size: 25px;
+    }
+    .map-item:not(:first-child) {
+
+        margin-left: 0;
+    }
+    .map-item p {
+        padding-top: 12px;
+        font-size: 11px;
+    }
+    .footer {
+        padding-top: 20px;
+    }
+    
+    
+    .footer-logo {
+        padding-bottom: 15px;
+    }
+    .footer-desc {
+        font-size: 14px;
+        text-align: justify;
+    }
+    .footer-menu {
+        margin-left: 0px;
+    }
+    .footer-form {
+        margin-left: 0;
+    }
+    .form-action {
+        right: -30px;
+        padding: 16.2px 22.5px;
+    }
+    .form input {
+        padding-right: 45px;
+
+    }
+    .footer-top {
+        padding-bottom: 30px;
     }
 }
 
@@ -362,10 +430,10 @@
     .header::before {
         display: none;
     }
-    .banner{
+    .banner {
         top: 0;
         padding: 0 1%;
-        min-height: 509px;
+        min-height: 550px;
     }
     .banner-box {
        margin-top: 45px;
@@ -388,5 +456,157 @@
     .banner-social a {
         margin: 20px;
     }
-    
+    .about {
+        padding-top: 15px;
+    }
+    .about-image{
+        padding: 0;
+    }
+    .about-caption-title {
+        left: 185px;
+        bottom: -14px;
+        padding: 11px 11px 12px 31px;
+        font-size: 15px;
+    }
+    .about-caption-icon {
+        width: 50px;
+        left: 168px;
+        top: 295px;
+    }
+    .about-box {
+        padding-top: 25px;
+    }
+    .title p {
+        padding: 9px 0 10px 0;
+    }
+    .about-desc > p:nth-of-type(1) {
+        padding-bottom: 0px;
+        margin-bottom: 5px;
+    }
+    .about-desc {
+        padding-bottom: 35px;
+    }
+    .service {
+        padding: 20px 0;
+    }
+    .service-item {
+        width: 100%;
+        padding: 7px 100px 23px 15px;
+    }
+    img.service-number {
+        width: 50px;
+    }
+    .service-number {
+        right: 24px;
+        top: 21px;
+    }
+    .service-item:not(:first-child){
+        margin-top: 10px;
+    }
+    .news {
+        padding: 25px 0;
+    }  
+    .news-item {
+        width: 100%;
+    } 
+    .new-box {
+        flex-direction: column;
+    }
+    .new-info {
+        padding: 20px 5px 16px;
+    }
+    .new-more {
+        padding: 15px 0;
+    }
+    .feedback-box {
+        padding: 30px 0;
+    }
+    .feedback-content {
+        flex-direction: column;
+    }
+    .feedback-info {
+        left: 171px;
+        bottom: -21px;
+        padding: 8px 40px 13px 15px;
+
+    }
+    .feedback-icon {
+        left: -42px;
+        top: 18px;
+        width: 48px;
+    }
+    .feedback-desc {
+        font-size: 13px;
+    }
+    .feedback-about {
+        max-width: 80%;
+        margin-left: 59px;
+        padding-top: 30px;
+    }
+    .feedback-card img {
+        width: calc(100% - 10px);
+        margin: 0 5px;
+    }
+    .map::before {
+        height: 100%;
+
+    }
+    .map-list {
+        height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .map-item {
+        display: flex;
+        justify-content: initial;
+        align-items: flex-end;
+        margin-bottom: 20px;
+        width: 100%;
+
+    }
+    .map-contact {
+        font-size: 23px;
+    }
+    .map-item img {
+        width: 20px;
+        margin-right: 10px;
+    }
+    .map-list > .map-item:nth-of-type(1) .map-contact{
+        display: block;
+        padding-top: 10px;
+        margin: 0 auto;        
+        
+    }
+    .footer {
+        padding-top: 20px;   
+     }
+     .footer-top {
+        padding-bottom: 10px;
+        flex-direction: column;
+    }
+    .footer-logo {
+        padding-bottom: 10px;
+    }
+    .footer-desc {
+        text-align: justify;
+    }
+    .footer-menu {
+        padding-top: 10px;
+    }
+    .footer-menu {
+        margin-left: 0;
+    }
+    .footer-form {
+        margin-left: 0;
+    }
+    .form input {
+        width: 85%;
+
+    }
+    .py-5 {
+        padding-top: 1.5rem!important;
+        padding-bottom: 1.5rem!important;
+    }
+
 }
