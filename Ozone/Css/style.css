@@ -255,10 +255,33 @@ body{
     color: #FFFF;
     line-height: 1;
     height: 48px;
+    box-shadow: inset 0 0 0 0 pink;
+    transition: ease-out 0.5s ;
+
 }
 .link:hover{
-    color: #FFFF;
+
+    color: white;
+    box-shadow: inset  200px  0 0 0 pink;
 }
+/* .link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:0%;
+    height: 48px;
+    box-shadow: inset 0 200px 0 0;
+    transition: 0.5s linear;
+    z-index: 10;
+} */
+
+/* .link:hover::after{
+    z-index: 10;
+    color: pink;
+    width: 50%;
+    
+} */
 .link .arrow{
     position: absolute;
     top: 0;

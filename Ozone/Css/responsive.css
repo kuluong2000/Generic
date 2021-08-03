@@ -42,6 +42,10 @@
     .about {
         padding-top: 20px;
     }
+
+    .about-box {
+        margin-left: 20px;
+    }
     .about-image{
         margin-right: 70px;
     }
@@ -75,6 +79,28 @@
 
 
  }
+
+
+ @media ( min-width:1200px ) and  ( max-width:1400px ){
+    .about-caption-title {
+        left: 218px;
+        bottom: -45px;
+    }
+    .about-caption-icon {
+        left: 186px;
+        top: 370px;
+    }
+    .about-desc {
+        padding-bottom: 0;
+        overflow-y: scroll;
+        height: 301px;
+        margin-bottom: 30px;
+    }
+    .about-box {
+        margin-left: 65px;
+    }
+ }
+
 
  @media  (min-width: 992px) and (max-width:1199px) {
 
@@ -112,6 +138,10 @@
         padding: 8px 0 15px 0;
         font-size: 38px;
     }
+    .about-box {
+        margin-left: 0px;
+    }
+    
     .about-desc > p:nth-of-type(1) {
         padding-bottom: 0;
         margin-bottom: 5px;
@@ -232,6 +262,9 @@
         /* object-fit: cover; */
         object-fit: inherit;
     }
+    .about {
+        padding-top:0px;
+    }
     .about-caption-title {
 
         left: 410px;
@@ -270,6 +303,7 @@
         width: 100%;
         padding: 20px 169px 35px 52px;
         border-bottom: 1px solid #265BC5;
+        margin-bottom: 10px;
 
     }
     .news {
@@ -299,6 +333,11 @@
     .feedback-icon {
         left: -60px;
         top: 9px;
+    }
+    .feedback-desc {
+
+        height: 240px;
+        overflow-y: scroll;
     }
     .feedback-content {
 
@@ -367,6 +406,9 @@
 }
 
 @media (max-width:767px){
+    body{
+        overflow-x: hidden;
+    }
     .container{
         max-width: 100%;
         margin: 0 ;
@@ -396,15 +438,36 @@
         background-color: #333;
         position: absolute;
         width: 100%;
-        left: -100%;
+        left: 0;
+        transform: translateX(-100%);
         display: none;
         top: 0;
-        align-items: centerset;
+        align-items: unset;
         justify-content: unset !important;
         height: 100vh;
-        transition: all 0.9s linear;
+        transition:  transform 0.5s ease-in;
+     
+    }
+    /* .header-menu-list > .header-menu-item{
+        opacity: 0;
+    } */
+    /* .header-menu-list{
+        flex-direction: column;
+        z-index: 99999;
+        background-color: #333;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 100vh;
+        left: 0px;
+        transform:  translateX(-100%);
+        transition:  transform 0.5s ease-in;
+    } */
+    .header-menu-list li{
         opacity: 0;
     }
+   
+  
     .header-contact {
         margin-top: 0;
     }
@@ -421,8 +484,8 @@
         display: block;
     }
     .isactive.header-menu-list{
-        left: 0;
         opacity: 1;
+        transform: translateX(0);
     }
     .header-bottom {
         padding: 0;
@@ -430,6 +493,18 @@
     .header::before {
         display: none;
     }
+    /* animation menu */
+    @keyframes navLink {
+        from{
+            opacity: 0;
+            transform:  translateX(-50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+   
     .banner {
         top: 0;
         padding: 0 1%;
@@ -463,15 +538,15 @@
         padding: 0;
     }
     .about-caption-title {
-        left: 185px;
+        left: 50vw;
         bottom: -14px;
         padding: 11px 11px 12px 31px;
-        font-size: 15px;
+        font-size: 3vw;
     }
     .about-caption-icon {
-        width: 50px;
-        left: 168px;
-        top: 295px;
+        width: 8vw;
+        left: 47.3vw;
+        top: 76vw;
     }
     .about-box {
         padding-top: 25px;
@@ -485,6 +560,9 @@
     }
     .about-desc {
         padding-bottom: 35px;
+    }
+    .image-person img {
+        width: 100%;
     }
     .service {
         padding: 20px 0;
@@ -517,6 +595,9 @@
     }
     .new-more {
         padding: 15px 0;
+    }
+    .feedback {
+        max-height: 100%;
     }
     .feedback-box {
         padding: 30px 0;
@@ -600,8 +681,16 @@
     .footer-form {
         margin-left: 0;
     }
+    .footer-form img{
+        width: 100%;
+    }
     .form input {
-        width: 85%;
+        width: 87%;
+
+    }
+    .form-action {
+
+        right: -27px;
 
     }
     .py-5 {
@@ -610,3 +699,5 @@
     }
 
 }
+
+
