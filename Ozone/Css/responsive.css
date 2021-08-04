@@ -409,6 +409,7 @@
     body{
         overflow-x: hidden;
         padding-top: 50px;
+
     }
     .container{
         max-width: 100%;
@@ -516,19 +517,19 @@
        color: red;
     margin-left: 20px;
    }
-   
-
-
-
-
     .banner {
         top: 0;
         padding: 0 1%;
         min-height: 550px;
     }
+    .banner-description {
+        max-width: 100%;
+        text-align: justify;
+    }
     .banner-box {
-       margin-top: 45px;
+       margin-top: 85px;
        max-width: 100%;
+       padding: 0 1%;
     }
     .banner-content{
         margin: 0;
@@ -536,13 +537,11 @@
         display: block;
     }
     .banner-title {
-        font-size: 25px;
+        font-size: 23px;
     }
     .banner-social {
-        top: 88%;
-        left: 32%;
-        align-items: center;
-        flex-direction: row;
+        visibility: hidden;
+        opacity: 0;
     }
     .banner-social a {
         margin: 20px;
@@ -582,17 +581,18 @@
     }
     .service {
         padding: 20px 0;
+        margin-top: 55px;
     }
     .service-item {
         width: 100%;
-        padding: 7px 100px 23px 15px;
+        padding: 7px 0 15px 15px;
     }
     img.service-number {
         width: 50px;
     }
     .service-number {
-        right: 24px;
-        top: 21px;
+        right: 5vw;
+        top: 10px;
     }
     .service-item:not(:first-child){
         margin-top: 10px;
@@ -612,37 +612,58 @@
     .new-more {
         padding: 15px 0;
     }
+    .news-button-all {
+        margin-top: 30px;
+    }
     .feedback {
         max-height: 100%;
+        margin-top: 35px;
     }
     .feedback-box {
         padding: 30px 0;
     }
     .feedback-content {
+        
         flex-direction: column;
     }
     .feedback-info {
-        left: 171px;
-        bottom: -21px;
-        padding: 8px 40px 13px 15px;
-
+        left: 55%;
+        transform: translateX(-50%);
+        width: 47vw;
+        padding: 2vw 3vw 2vw 4vw;
+    }
+    .feedback-info h4 {
+        font-size: 3vw;
+    }
+    .feedback-info p {
+        font-size: 2.5vw;
     }
     .feedback-icon {
-        left: -42px;
+        left: -12vw;
         top: 18px;
-        width: 48px;
+        width: 11vw;
     }
     .feedback-desc {
         font-size: 13px;
     }
     .feedback-about {
         max-width: 80%;
-        margin-left: 59px;
+        margin-left: 14vw;
         padding-top: 30px;
     }
+    .feedback-card {
+        text-align: center;
+
+    }
     .feedback-card img {
-        width: calc(100% - 10px);
-        margin: 0 5px;
+        width: 100%;
+        padding: 0 30px;
+    }
+    .new-info h2 {
+        font-size: 6vw;
+    }
+    .title p {
+        font-size: 25px;
     }
     .map::before {
         height: 100%;
@@ -657,10 +678,15 @@
     .map-item {
         display: flex;
         justify-content: initial;
-        align-items: flex-end;
+        align-items: center;
         margin-bottom: 20px;
         width: 100%;
 
+    }.map-item p {
+        padding-top: 0;
+    }
+    .map-item:not(:first-child) {
+        text-align: unset;
     }
     .map-contact {
         font-size: 23px;
@@ -682,6 +708,10 @@
         padding-bottom: 10px;
         flex-direction: column;
     }
+    .footer-top-item {
+        margin-right: 23px;
+        width: 120px;
+    }
     .footer-logo {
         padding-bottom: 10px;
     }
@@ -701,17 +731,31 @@
         width: 100%;
     }
     .form input {
-        width: 87%;
+        width: 100%;
+        object-fit: cover;
 
     }
     .form-action {
 
-        right: -27px;
+        right: -29px;
 
     }
+    .form input{
+        padding-left: 12px;
+    }
+    .footer-top-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
     .py-5 {
         padding-top: 1.5rem!important;
         padding-bottom: 1.5rem!important;
+    }
+    .slick-dots {
+
+        bottom: -35px;
+    
     }
 
 }

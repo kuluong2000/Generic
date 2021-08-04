@@ -274,24 +274,6 @@ body{
     color: white;
     box-shadow: inset  200px  0 0 0 pink;
 }
-/* .link::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width:0%;
-    height: 48px;
-    box-shadow: inset 0 200px 0 0;
-    transition: 0.5s linear;
-    z-index: 10;
-} */
-
-/* .link:hover::after{
-    z-index: 10;
-    color: pink;
-    width: 50%;
-    
-} */
 .link .arrow{
     position: absolute;
     top: 0;
@@ -309,12 +291,6 @@ body{
 .about{
     padding-top: 62px;
 }
-/* .about-image {
-    margin-right: 71px;
-} */
-/* .image-person{
-    width: 621px;
-} */
 .about-caption-title{
     position: absolute;
     left: 275px;
@@ -466,6 +442,9 @@ body{
     margin-top: 48px;
    
 }
+.feedback-container{
+    overflow-x: hidden;
+}
 .feedback{
     background:
     linear-gradient(to bottom,
@@ -474,8 +453,12 @@ body{
          url(../image/feedback_image.png) no-repeat center/cover;
     max-height: 838px;
 }
+.slick-list {
+    overflow: unset !important;
+
+}
 .feedback-box{
-    padding: 123px 0;
+    padding: 123px 0 30px;
 
 }
 .feedback-content{
@@ -529,6 +512,7 @@ body{
 
 }
 .feedback-brand{
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -677,4 +661,19 @@ body{
 }
 .footer-bottom{
     border-top: 1px solid #D7D7D7;
+}
+/* slider custom*/
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #EE1F23;
+    border-radius: 100%;
+    border: 1px solid #265BC5;
+}
+.slick-dots li button:before {
+    font-size: 9.5px;
+}
+.slick-dots {
+
+    bottom: -45px;
+
 }
