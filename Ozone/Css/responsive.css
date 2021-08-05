@@ -29,10 +29,8 @@
     .banner-social {
         flex-direction: column;
         position: absolute;
-        top: 64%;
         left: 82%;
         text-align: center;
-        transform: translateY(-50%);
         z-index: 4;
     }
     .banner-angle img {   
@@ -129,7 +127,7 @@
         margin-bottom: 70px;
     }
     .banner-social {
-        top: 68%;
+    
         left: 87%;
 
     }
@@ -232,6 +230,7 @@
         font-size: 12px ;
     }
     .banner {
+        min-height: 590px;
         top: -65px ;
     }
     
@@ -239,15 +238,16 @@
         margin-right: 40px ;
     }
     .banner-content {
-        padding-top: 305px;
+        padding-top:180px;
     }
     
     .banner-title  {
         font-size: 28px ;
     }
     .banner-social {
-        top: 58%;
-        left: 83%
+        left: 83%;
+        top: 55%;
+        transform: translateY(0%);
     }
     .banner-description {
         font-size: 13px ;
@@ -462,6 +462,8 @@
         justify-content: unset !important;
         height: 100vh;
         transition:  transform 0.5s ease-in;
+        visibility: hidden;
+        opacity: 0;
      
     }
 
@@ -749,8 +751,8 @@
     }
     
     .py-5 {
-        padding-top: 1.5rem!important;
-        padding-bottom: 1.5rem!important;
+        padding-top: 1rem!important;
+        padding-bottom: 1rem!important;
     }
     .slick-dots {
 
