@@ -5,16 +5,107 @@
         padding: 0;
     }
 } */
+@media (min-width:1025px){
+    .header-menu-link:hover{
+        color: #FFFF;
+    }
+    .header-menu-link:hover::before{
+        color:#FFFF;
+        transform: scale(1);
+    }
+    .banner-social a:hover{
+        opacity: 0.5;
+        
+    }
+    .link:hover{
+        color: rgba(255,255,255,1);
+        box-shadow: inset  200px  0 0 0 #333    ;
+    }
+    
+    /* button hover effects */
+    .btn-effect span{
+        position: absolute;
+        display: block;
+        background: pink;
+        
+    }
+    .btn-effect span:nth-child(1){
+        left:0;
+        bottom: 0;
+        height: 100%;
+        width: 1px ;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.5s;
+    }
+    .btn-effect:hover span:nth-child(1){
+        transform: scaleY(1);
+        transform-origin: bottom;
+        transition: transform 0.5s;
+    }
+    .btn-effect span:nth-child(2){
+        left:0;
+        bottom: 0;
+        width: 100%;
+        height: 1px ;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+       
+    }
+    .btn-effect:hover span:nth-child(2){
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: transform 0.5s;
+        
+    }
+    .btn-effect span:nth-child(3){
+        right:0;
+        bottom: 0;
+        height: 100%;
+        width:  1px ;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.5s;
+        /* transition-delay: 0.5s; */
+        
+    }
+    .btn-effect:hover span:nth-child(3){
+        transform: scaleY(1);
+        transform-origin: bottom;
+        transition: transform 0.5s;
+        /* transition-delay: 0.5s; */
+        
+    }
+    .btn-effect span:nth-child(4){
+        top:0;
+        left: 0;
+        width:  100%;
+        height:  1px ;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.5s;
+        /* transition-delay: 0.5s; */
+       
+    }
+    .btn-effect:hover span:nth-child(4){
+        transform: scaleX(1);
+        transform-origin: right    ;
+        transition: transform 0.5s;
+        /* transition-delay: 0.5s; */
+        
+    }
+    .news-item:hover{
+        box-shadow: 0 7px 10px 5px rgba(0,0,0, 0.1);
+    }
+}
 
 @media (min-width: 1400px){
     .container{
         max-width:1170px;
     }
     
-    .banner {
-        top: -65px;
 
-    }
     .banner-title  {
         font-size: 42px;
         line-height: 1.3;;
@@ -44,9 +135,7 @@
     .about-box {
         margin-left: 20px;
     }
-    .about-image{
-        margin-right: 70px;
-    }
+    
     .title p {
         padding-bottom: 20px;
     }
@@ -179,9 +268,15 @@
     .news {
         padding: 95px 0;
     }
-    
+    .new-info h2 {
+        font-size: 19px;
+        font-weight: bold;
+    }
+    .feedback-brand {
+        margin-top: 60px;
+    }
     .feedback-box {
-        padding: 70px 0;
+        padding: 0;
     }
     .feedback-about {
         max-width: 84%;
@@ -195,8 +290,12 @@
         margin-left: 0;
     }
     .form-action {
-        right: 13px;
+        right: -28px;
         transform: translateX(-56%);
+    }
+    .form input {
+        width: 270px;
+
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -231,7 +330,7 @@
     }
     .banner {
         min-height: 590px;
-        top: -65px ;
+        
     }
     
     .header-menu-item {
@@ -314,6 +413,9 @@
     .new-info {
         padding: 20px 5px 25px;
     }
+    .new-info p {
+       text-align: unset;
+    }
     .new-more {
         padding: 10px 0;
     }
@@ -343,8 +445,11 @@
 
         padding-top: 20px;
     }
+    .feedback-brand {
+        margin-top: 43px;
+    }
     .feedback-box {
-        padding: 40px 0 60px 0;
+        padding: 40px 0 0px 0;
     }
     .map{
         min-height: 125px;
@@ -365,10 +470,15 @@
     }
     .map-contact {
         font-size: 25px;
+        white-space: nowrap;
+        padding: 47px 0;
     }
     .map-item:not(:first-child) {
-
-        margin-left: 0;
+        width: max-content;
+        margin-left: 20px;
+        white-space: nowrap;
+        text-align: center;
+         padding: 17px 0px;
     }
     .map-item p {
         padding-top: 12px;
@@ -393,11 +503,11 @@
         margin-left: 0;
     }
     .form-action {
-        right: -30px;
-        padding: 16.2px 22.5px;
+        right: -32px;
+        
     }
     .form input {
-        padding-right: 45px;
+        padding-right:60px;
 
     }
     .footer-top {
@@ -443,8 +553,25 @@
     .header-img::after {
         display: none;
     }
-    .header-contact-list {
-       display: none;
+    .header-contact{
+        position: absolute ;
+        height: max-content;
+        align-items: center;
+        right: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        align-items: baseline;
+    }
+    .header-contact-item:not(:first-child){
+        margin-left: 0;
+    }
+    .header-contact-list > .header-contact-item:nth-of-type(3){
+        display: none;
+       
+    }
+    .header-contact-item p,
+    .header-contact-item span{
+        display: none;
     }
    
 
@@ -461,7 +588,7 @@
         align-items: unset;
         justify-content: unset !important;
         height: 100vh;
-        transition:  transform 0.5s ease-in;
+        transition:0.5s ;
         visibility: hidden;
         opacity: 0;
      
@@ -488,7 +615,9 @@
         display: block;
     }
     .isactive.header-menu-list{
+        visibility: inherit;
         right: 0;
+        margin-left: 0;
     }
     .isactive.header-menu-list{
         opacity: 1;
@@ -520,7 +649,7 @@
     margin-left: 20px;
    }
     .banner {
-        top: 0;
+        margin-top: 0;
         padding: 0 1%;
         min-height: 550px;
     }
@@ -549,7 +678,7 @@
         margin: 20px;
     }
     .about {
-        padding-top: 15px;
+        padding-top: 20px;
     }
     .about-image{
         padding: 0;
@@ -582,7 +711,7 @@
         width: 100%;
     }
     .service {
-        padding: 20px 0;
+        padding: 40px 0;
         margin-top: 55px;
     }
     .service-item {
@@ -596,11 +725,9 @@
         right: 5vw;
         top: 10px;
     }
-    .service-item:not(:first-child){
-        margin-top: 10px;
-    }
+    
     .news {
-        padding: 25px 0;
+        padding: 40px 0;
     }  
     .news-item {
         width: 100%;
@@ -622,7 +749,7 @@
         margin-top: 35px;
     }
     .feedback-box {
-        padding: 30px 0;
+        padding: 40px 0;
     }
     .feedback-content {
         
@@ -662,7 +789,7 @@
         padding: 0 30px;
     }
     .new-info h2 {
-        font-size: 6vw;
+        font-size: 19px;
     }
     .title p {
         font-size: 25px;
@@ -689,9 +816,11 @@
     }
     .map-item:not(:first-child) {
         text-align: unset;
+        padding: 0px;
     }
     .map-contact {
         font-size: 23px;
+        padding: 15px 0;
     }
     .map-item img {
         width: 20px;
@@ -744,6 +873,7 @@
     }
     .form input{
         padding-left: 12px;
+        padding-right: 70px;
     }
     .footer-top-list {
         display: flex;
@@ -758,6 +888,10 @@
 
         bottom: -35px;
     
+    }
+    .mybtn-scrolltop{
+        display: none;
+        visibility: hidden;
     }
 
 }

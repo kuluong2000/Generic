@@ -8,8 +8,8 @@ $( document ).ready(function() {
       slidesToScroll: 1,
       dots: true,
       arrows: false,
-      autoplay: true,
-      autoplaySpeed: 1500
+    //   autoplay: true,
+      autoplaySpeed: 2000
     });
 });
 
@@ -29,11 +29,13 @@ bars.addEventListener('click', ()=>{
     });
 });
 new WOW().init();
-// window.addEventListener('click', function(e){
-//     if (!menu.contains(e.target) && !e.target.matches('.sub-menu')){
-//         menu.classList.remove('isactive');
-//         bars.classList.remove('isactive');
-//     }
-// });
+$('.banner-angle').click(function(){
+    var offset = $('.service').offset().top;
+    $(window).scrollTop(offset);
+});
 
 
+$('.mybtn-scrolltop').click(function(){
+    var scroll = $('.header').offset().top;
+    $(window).scrollTop(scroll);
+})

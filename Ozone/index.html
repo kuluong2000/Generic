@@ -16,7 +16,7 @@
    
     <title>Ozone</title>
 </head>
-<body>
+<body >
 <header class="header">
     <div class="container">
         <div class="row">
@@ -28,18 +28,23 @@
                 <div class="header-contact col-md-9">
                     <ul class="header-contact-list">
                         <li class="header-contact-item">
-                            <img src="./image/vector_phone.svg" alt="" class="header-contact-img">
-                            <div class="header-contact-info">
-                                <p>HOTLINE</p>
-                                <span >02866523966</span>
-                            </div>
+                            <a href="tel:02866523966" class="d-flex">
+                                <img src="./image/vector_phone.svg" alt="" class="header-contact-img">
+                                <div class="header-contact-info">
+                                    <p>HOTLINE</p>
+                                    <span >02866523966</span>
+                                </div>
+                            </a>
                         </li>
                         <li class="header-contact-item">
-                            <img src="./image/vector_email.svg" alt="" class="header-contact-img">
-                            <div class="header-contact-info">
-                                <p>EMAIL</p>
-                                <span>info@ozonejsc.com</span>
-                            </div>
+                            <a href="mailto:info@ozonejsc.com" class="d-flex ">
+                                <img src="./image/vector_email.svg" alt="" class="header-contact-img">
+                                <div class="header-contact-info">
+                                    <p>EMAIL</p>
+                                    <span>info@ozonejsc.com</span>
+                                </div>
+                            </a>
+                            
                         </li>
                         <li class="header-contact-item">
                             <img src="./image/vector_lock.svg" alt="" class="header-contact-img">
@@ -55,10 +60,10 @@
                     <div class="line2"></div>
                     <div class="line3"></div>  
                 </div>
-                <div class="icon d-flex">
+                <!-- <div class="icon d-flex">
                     <a href="tel:0836423314"><i class="fas fa-phone-volume"></i></a>
                     <a href="mailto:tranhuuluong156200@gmail.com"><i class="far fa-envelope"></i></a>
-                </div>
+                </div> -->
             </div>
             <div class="header-bottom">
                 <nav class="header-menu ">
@@ -85,7 +90,7 @@
     </div>
 </header>
 <main>
-    <section class="banner ">
+    <section class="banner " >
         <div class="container">
             <div class="row">
                 <div class="banner-content  d-flex justify-content-between  ">
@@ -112,12 +117,15 @@
                    
                 </div>
                 <div class="banner-angle">
-                    <a href="/"><img src="./image/angle_down.png" alt="" srcset=""></a>
+                    <a href="javascript:void(0)" ><img src="./image/angle_down.png" alt="" srcset=""></a>
+                </div>
+                <div class="mybtn-scrolltop">
+                    <a href="javascript:void(0)"><i class="fas fa-angle-up"></i></a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section about wow fadeInUp ">
+    <section class="section about wow fadeInUp " id="about">
         <div class="container">
             <div class="row">
                 <div class="about-image col-lg-6 col-12 position-relative">
