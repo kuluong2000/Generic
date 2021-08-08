@@ -98,6 +98,10 @@
     .news-item:hover{
         box-shadow: 0 7px 10px 5px rgba(0,0,0, 0.1);
     }
+    .footer-social-item:hover{
+        opacity: 0.5;
+        transition: 0.5s;
+    }
 }
 
 @media (min-width: 1400px){
@@ -128,9 +132,7 @@
          bottom: 3px;
 
     }
-    .about {
-        padding-top: 20px;
-    }
+    
 
     .about-box {
         margin-left: 20px;
@@ -670,15 +672,15 @@
     .banner-title {
         font-size: 23px;
     }
-    .banner-social {
-        visibility: hidden;
-        opacity: 0;
+    .banner-social img {
+        display: none;
+        
     }
     .banner-social a {
         margin: 20px;
     }
     .about {
-        padding-top: 20px;
+        padding-top: 30px;
     }
     .about-image{
         padding: 0;
@@ -804,7 +806,7 @@
         align-items: flex-start;
         flex-direction: column;
     }
-    .map-item {
+    .map-item a{
         display: flex;
         justify-content: initial;
         align-items: center;
@@ -826,10 +828,11 @@
         width: 20px;
         margin-right: 10px;
     }
-    .map-list > .map-item:nth-of-type(1) .map-contact{
+    .map-list > .map-item:nth-of-type(1) {
         display: block;
         padding-top: 10px;
-        margin: 0 auto;        
+        margin: 0 auto; 
+
         
     }
     .footer {

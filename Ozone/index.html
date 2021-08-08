@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./Css/bootstrap.min.css">
     <link rel="stylesheet" href="./Css/slick.css">
     <link rel="stylesheet" href="./Css/slick-theme.css">
-    <link rel="stylesheet" href="/libs/animate.css">
+    <link rel="stylesheet" href="./libs/animate.css">
     <link rel="stylesheet" href="./Css/all.css">
     <link rel="stylesheet" href="./Css/reset.css">
  
@@ -55,7 +55,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="sub-menu ">
+                <div class="sub-menu  ">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>  
@@ -72,16 +72,16 @@
                             <a href="/" class="header-menu-link">Trang chủ</a>
                         </li>
                         <li class="header-menu-item">
-                            <a href="/" class="header-menu-link">Dịch vụ</a>
+                            <a href="#service" class="header-menu-link">Dịch vụ</a>
                         </li>
                         <li class="header-menu-item">
-                            <a href="/" class="header-menu-link">Album Ảnh</a>
+                            <a href="#new" class="header-menu-link">Album Ảnh</a>
                         </li>
                         <li class="header-menu-item">
-                            <a href="/" class="header-menu-link">Chứng nhận</a>
+                            <a href="#feedback" class="header-menu-link">Chứng nhận</a>
                         </li>
                         <li class="header-menu-item">
-                            <a href="/" class="header-menu-link">Liên hệ</a>
+                            <a href="#footer" class="header-menu-link">Liên hệ</a>
                         </li>
                     </ul>
                 </nav>
@@ -90,7 +90,7 @@
     </div>
 </header>
 <main>
-    <section class="banner " >
+    <section class="banner "  >
         <div class="container">
             <div class="row">
                 <div class="banner-content  d-flex justify-content-between  ">
@@ -125,7 +125,7 @@
             </div>
         </div>
     </section>
-    <section class="section about wow fadeInUp " id="about">
+    <section class="section about wow fadeInUp ">
         <div class="container">
             <div class="row">
                 <div class="about-image col-lg-6 col-12 position-relative">
@@ -161,7 +161,7 @@
             </div>
         </div>
     </section>
-    <section class="service wow fadeInUp" >
+    <section class="service wow fadeInUp" id="service">
         <div class="container">
             <div class="row">
                 <div class="service-box ">
@@ -221,7 +221,7 @@
             </div>
         </div>
     </section>
-    <section class="news wow fadeInUp">
+    <section class="news wow fadeInUp" id="new">
         <div class="container">
             <div class="row">
                 <div class="title title-uppercase text-center">
@@ -296,7 +296,7 @@
             </div>
         </div>
     </section>
-    <section class="feedback wow fadeInUp">
+    <section class="feedback wow fadeInUp" id="feedback">
         <div class="container feedback-container">
             <div class="feedback-box ">
                 <div class="title title-uppercase text-center">
@@ -380,30 +380,35 @@
                  
                     
                         <div class="map-item">
-                            <img src="./image/map_pin.png" alt="" srcset="">
-                            <p class="map-address">No. 22, N7 street, Quarter 3, Cat Lai Ward,<br> District 2, Ho Chi Minh City
-                            </p>
+                            <a href="/"><img src="./image/map_pin.png" alt="" srcset="">
+                                <p class="map-address">No. 22, N7 street, Quarter 3, Cat Lai Ward,<br> District 2, Ho Chi Minh City
+                                </p>
+                            </a>
                         </div>
               
                     
                         <div class="map-item">
-                            <img src="./image/map_hotline.png" alt="" srcset="">
-                            <p class="map-phone">028 6652 3966
-                            </p>
+                            <a href="tel:02866523966">
+                                <img src="./image/map_hotline.png" alt="" srcset="">
+                                <p class="map-phone">028 6652 3966
+                                </p>
+                            </a>
                         </div>
                     
                    
                         <div class="map-item">
-                            <img src="./image/map_emaiill.png" alt="" srcset="">
-                            <p class="map-email">info@ozonejsc.vnskyqueen.vn
-                            </p>
+                            <a href="mailto:info@ozonejsc.vnskyqueen.vn">
+                                <img src="./image/map_emaiill.png" alt="" srcset="">
+                                <p class="map-email">info@ozonejsc.vnskyqueen.vn </p>
+                            </a>
                         </div>
                     
                     
                         <div class="map-item">
-                            <img src="./image/map_globe.png" alt="" srcset="">
-                            <p class="map-social">www.ozonejsc.vn
-                            </p>
+                            <a href="https://www.ozonejsc.vn/">
+                                <img src="./image/map_globe.png" alt="" srcset="">
+                                <p class="map-social">www.ozonejsc.vn</p>
+                            </a>
                         
                     </div>
                 </div>
@@ -411,7 +416,7 @@
         </div>
     </section>
 </main>
-<footer class="footer wow fadeInUp ">
+<footer class="footer wow fadeInUp " id="footer">
     <div class="container">
         <div class="row">
             <div class="footer-top d-flex justify-content-between">

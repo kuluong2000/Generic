@@ -8,7 +8,7 @@ $( document ).ready(function() {
       slidesToScroll: 1,
       dots: true,
       arrows: false,
-    //   autoplay: true,
+      autoplay: true,
       autoplaySpeed: 2000
     });
 });
@@ -30,10 +30,27 @@ bars.addEventListener('click', ()=>{
 });
 new WOW().init();
 $('.banner-angle').click(function(){
-    var offset = $('.service').offset().top;
+    var offset = $(this).parents().children(".banner").next().offset().top;
+  
     $(window).scrollTop(offset);
 });
 
+//scroll to top
+//Khi người dùng cuộn chuột thì gọi hàm scrollFunction
+window.onscroll = function() {
+    scrollFunction()
+};
+// khai báo hàm scrollFunction
+function scrollFunction() {
+    // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        //nếu lớn hơn 20px thì hiện button
+        document.querySelector('.mybtn-scrolltop').style.display="block";
+    } else {
+         //nếu nhỏ hơn 20px thì ẩn button
+        document.querySelector('.mybtn-scrolltop').style.display = "none";
+    }
+}
 
 $('.mybtn-scrolltop').click(function(){
     var scroll = $('.header').offset().top;
