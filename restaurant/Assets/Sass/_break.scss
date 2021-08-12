@@ -1,0 +1,116 @@
+.break{
+    padding-bottom: 100px;
+    
+    &-menu{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+        &-item:not(:last-child){
+            margin-right: 80px;
+        }
+        &-link{
+            font-size: 18px;
+            text-transform: uppercase;
+            text-decoration: none;
+            position: relative;
+            padding-bottom: 5px;
+            font-size: 18px;
+            color: $dark-color-text;
+            &.active::before{
+                content: '';
+                position: absolute;
+                left:0;
+                bottom: 0;
+                width: 100%;
+                height: 2px ;
+                background-color: $brown-color;
+                transition: transform 0.5s;
+            }
+            &:hover{
+                color: $brown-color;
+            }
+            
+        }
+    }
+    &-shope{
+        background: url("../image/Home/home_shop_bg.jpg") no-repeat center /  cover;
+        min-height: 690px;
+        padding: 45px 0;
+        &-info{
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: max-content;
+            &-add {
+                color: white;
+                font-size: 60px;
+                line-height: 1;
+                font-weight: normal;
+                padding: 30px 35px;
+                background-color: $brown-color;
+                
+                &:hover{
+                    color: white;
+                }
+            }
+            &-desc{
+                margin: 50px 0 15px 0;
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: white;
+            }
+            &-btn{
+                background-color: #FFFFFF;
+                margin-right: 0;
+            }
+           
+            
+        }
+        
+        &-image:nth-child(1) {
+            padding-right: 15px;
+            padding-bottom: 15px;
+            
+          
+           
+            
+        }
+        &-image:nth-child(2 ) {
+            padding-left: 15px;
+            padding-bottom: 15px;
+           
+           
+            
+        }
+        &-image:nth-child(3) {
+            padding-right: 15px;
+            padding-top: 15px;
+            
+           
+           
+            
+        }
+        &-image:nth-child(4 ) {
+            padding-left: 15px;
+            padding-top: 15px;
+           
+           
+            
+        }
+       
+        
+        
+    }
+}
+//custom bootstrap
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: unset !important;
+    background-color:unset;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: $brown-color !important;
+    background-color:unset !important;
+}
