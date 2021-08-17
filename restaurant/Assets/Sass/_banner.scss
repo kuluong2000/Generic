@@ -1,17 +1,31 @@
 .banner{
     position: relative;
-    background:url(/Assets/image/Home/Home_banner.jpg) no-repeat center/cover ;
     z-index:  6;
     min-height: 735px;
-  
-    &::after{
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
+    
+    &-img{
+        img{
+            min-height: 735px;
+            object-fit: cover;
+            
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+          
+            background-color: rgba($color: #000000, $alpha: 0.3);
+            }
+    }
+    
+    &-slider{
+     overflow: s;;
+    }
+    &-img img{
         width: 100%;
-        height: 100%;
-        background-color: rgba($color: #000000, $alpha: 0.5);
+       
     }
     &-box{
         position:absolute;
@@ -46,15 +60,5 @@
     &-action{
         margin-top: 60px;
 
-    } 
-    &-number{
-        position: absolute;
-        font-family: "roboto",sans-serif;
-        z-index: 99998;
-        bottom: 0;
-        left:50%;
-        transform: translateX(-50%);
-        color: white;
-    }
-    
+    }  
 }

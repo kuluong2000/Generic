@@ -29,6 +29,9 @@
     .btn-buy-now{
         padding: 14px 25px 14px 39px;
     }
+    .btn-white{
+        background-color: white;
+    }
 
 // btn effect
 .btn-effect span{
@@ -102,4 +105,111 @@
     transition: transform 0.5s;
     /* transition-delay: 0.5s; */
     
+}
+// sub-menu
+.sub-menu {
+    width: 25px;
+    position: absolute;
+    right: 30px;
+    
+    top: 15px;
+    z-index: 999;
+    display: none;
+}
+.sub-menu div {
+    cursor: pointer;
+    width: 25px;
+    height: 3px;
+    background-color: red;
+    margin: 5px;
+    transition: transform 0.5s linear;
+}
+
+.isactive .line1 {
+    transform: rotate(-45deg)translate(-5px,6px);
+}
+.isactive .line2 {
+    opacity: 0;
+}
+.isactive .line3 {
+    transform: rotate(45deg)translate(-5px,-6px);
+}
+.slider-number{
+   
+        position: absolute;
+        font-family: "roboto",sans-serif;
+        z-index: 99998;
+        bottom: 4%;
+        left:50.5%;
+        transform: translateX(-50%);
+        color: white;
+    
+}
+.slick-dots {
+    bottom: 10px;
+
+}
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    padding-left: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.slick-dots li button:before {
+    content: "";
+    width: 40px;
+    height: 4px;
+    background-color: #a39e9f;
+    opacity: 0.7;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    background-color: $brown-color;
+
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: unset !important;
+    background-color: unset;
+}
+  
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #c3a281 !important;
+    background-color: unset !important;
+}
+.tab-content>.tab-pane {
+    display: block;
+    height: 0;
+}
+.tab-content>.active {
+      display: block;
+      height: auto;
+}
+.slick-next:before {
+    content: '>';
+}
+.slick-prev:before {
+    content: '<';
+}
+.slick-prev, .slick-next {
+    width: 50px;
+    height: 150px;
+    background-color: $brown-color;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.slick-prev {
+    z-index: 999;
+    left: 0;
+}
+.slick-next {
+    
+    right: 0;
 }
